@@ -1,0 +1,15 @@
+app_index:
+    path: /
+    defaults:  { _controller: LinkORB\Realtime\Controller\AppController::indexAction }
+
+app_add:
+    path: /add
+    defaults:  { _controller: LinkORB\Realtime\Controller\AppController::addAction }
+
+app_view:
+    path: /{id}
+    defaults:  { _controller: LinkORB\Realtime\Controller\AppController::viewAction }
+
+app_edit:
+    path: /{id}/edit
+    defaults:  { _controller: LinkORB\Realtime\Controller\AppController::editAction }

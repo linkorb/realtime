@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <table name="app">
+        <column name="id" type="integer" unsigned="true" autoincrement="true"/>
+        <column name="secret" type="string" length="64" notnull="true" />
+        <column name="name" type="text" notnull="true" />
+        <column name="description" type="text" notnull="false"/>
+
+        <index name="primary" primary="true" columns="id" />
+    </table>
+    <table name="channel">
+        <column name="id" type="integer" unsigned="true" autoincrement="true"/>
+        <column name="name" type="string" length="64" notnull="true" />
+        <column name="description" type="text" notnull="false"/>
+
+        <column name="app_id" type="integer" />
+
+        <index name="primary" primary="true" columns="id" />
+    </table>
+</schema>

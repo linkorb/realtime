@@ -1,0 +1,11 @@
+# Authentication
+login:
+    path: /login
+    defaults:  { _controller: LinkORB\Realtime\Controller\AuthController::loginAction }
+
+login_check:
+    path: /login/check
+
+logout:
+    path: /logout
+    defaults:  { _controller: LinkORB\Realtime\Controller\AuthController::logoutAction }

@@ -1,0 +1,17 @@
+{% extends "@Theme/layout.html.twig" %}
+
+{% block content %}
+    <dl>
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Description</dt>
+        <dd>{{ entity.description }}</dd>
+
+        <dt>Application Id</dt>
+        <dd>{{ entity.id }}</dd>
+
+        <dt>Application Secret</dt>
+        <dd>{{ entity.secret }}</dd>
+    </dl>
+{% endblock %}

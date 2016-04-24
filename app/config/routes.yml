@@ -1,0 +1,20 @@
+frontpage:
+    path: /
+    defaults:  { _controller: LinkORB\Realtime\Controller\StaticController::indexAction }
+
+auth:
+    prefix: /auth
+    resource: routes/auth.yml
+
+app:
+    prefix: /app
+    resource: routes/app.yml
+
+api:
+    prefix: /api
+    resource: routes/api.yml
+
+assets:
+    path: "/{postfix}"
+    requirements:
+        postfix: .+

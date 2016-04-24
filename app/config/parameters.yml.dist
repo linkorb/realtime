@@ -1,0 +1,6 @@
+---
+parameters:
+    pdo: mysql://root:root@localhost/realtime
+    userbase_url: http://www.linkorb.com/id/api/v1
+    userbase_username: kishanio
+    userbase_password: 11121992

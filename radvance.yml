@@ -1,0 +1,3 @@
+name: Realtime
+namespace: LinkORB\Realtime
+code_path: src/

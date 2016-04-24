@@ -1,0 +1,30 @@
+---
+# Import further configuration files
+imports:
+    - { resource: parameters.yml }
+
+parameters:
+    debug: true
+    app_name: Realtime
+
+app:
+    name: %app_name%
+
+zmq:
+    server: %zmq_server%
+    port: %zmq_port%
+
+socket:
+    server: %socket_server%
+    port: %socket_port%
+
+security:
+    paths:
+        login: /auth/login
+        check: /auth/login/check
+        logout: /auth/logout
+    providers:
+        UserBase:
+            url: %userbase_url%
+            username: %userbase_username%
+            password: %userbase_password%

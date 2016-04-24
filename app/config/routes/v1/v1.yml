@@ -1,0 +1,3 @@
+api_v1_channel:
+    prefix: /channel
+    resource: routes/v1/channel.yml
